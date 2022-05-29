@@ -1,0 +1,37 @@
+{
+    "name": "eksi-nextjs-clone",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@chakra-ui/icons": "^1.1.7",
+        "@chakra-ui/react": "^2.1.2",
+        "@emotion/react": "^11.9.0",
+        "@emotion/styled": "^11.8.1",
+        "axios": "^0.26.1",
+        "jsdom": "^19.0.0",
+        "framer-motion": "^6.3.4",
+        "next": "^12.1.6-canary.4",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "react-icons": "^4.3.1"
+    },
+    "devDependencies": {
+        "@types/jsdom": "^16.2.14",
+        "@types/node": "^17.0.23",
+        "@types/react": "17.0.43",
+        "@types/react-dom": "17.0.14",
+        "autoprefixer": "^10.4.4",
+        "eslint": "8.12.0",
+        "eslint-config-next": "12.1.4",
+        "postcss": "^8.4.12",
+        "postcss-preset-env": "^7.4.3",
+        "tailwindcss": "^3.0.23",
+        "typescript": "^4.6.3"
+    }
+}
