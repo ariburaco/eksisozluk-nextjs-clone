@@ -65,7 +65,7 @@ export const ApiProvider: React.FC = ({ children }) => {
         setLoading(true);
         try {
             if (_topic === undefined) return;
-            fetch(`http://localhost:3000/api/topics/${_topic}?day=${_day}`, {
+            fetch(`/api/topics/${_topic}?day=${_day}`, {
                 method: 'GET'
             }).then(res => res.json()).catch(err => console.log(err))
                 .then(res => {
@@ -97,7 +97,7 @@ export const ApiProvider: React.FC = ({ children }) => {
         try {
             if (_topic === undefined) return;
             setLoading(true);
-            fetch(`http://localhost:3000/api/topics/${_topic}?day=${_day}&p=${_page.toString()}`, {
+            fetch(`/api/topics/${_topic}?day=${_day}&p=${_page.toString()}`, {
                 method: 'GET'
             }).then(res => res.json())
                 .then(res => {
@@ -126,7 +126,7 @@ export const ApiProvider: React.FC = ({ children }) => {
         try {
             if (entryNumber === undefined) return;
 
-            fetch(`http://localhost:3000/api/entry/${entryNumber}`, {
+            fetch(`/api/entry/${entryNumber}`, {
                 method: 'GET'
             }).then(res => {
                 if (res.status === 404) {
@@ -160,7 +160,7 @@ export const ApiProvider: React.FC = ({ children }) => {
         try {
 
             setLoading(true);
-            fetch('http://localhost:3000/api/todays', {
+            fetch('/api/todays', {
                 method: 'GET'
             }).then(res => res.json()).then(res => {
                 setTodaysTopics(res as Topic[]);
@@ -178,7 +178,7 @@ export const ApiProvider: React.FC = ({ children }) => {
         try {
             //setTopics([]);
             setLoading(true);
-            fetch('http://localhost:3000/api/gundem', {
+            fetch('/api/gundem', {
                 method: 'GET'
             }).then(res => res.json()).then(res => {
                 setTodaysTopics(res as Topic[]);
@@ -195,7 +195,7 @@ export const ApiProvider: React.FC = ({ children }) => {
         try {
             //setTopics([]);
             setLoading(true);
-            fetch('http://localhost:3000/api/debe', {
+            fetch('/api/debe', {
                 method: 'GET'
             }).then(res => res.json()).then(res => {
                 setTodaysTopics(res as Topic[]);
