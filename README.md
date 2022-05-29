@@ -13,6 +13,9 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Live Demo
+[https://eksisozluk-nextjs-clone.herokuapp.com/](https://eksisozluk-nextjs-clone.herokuapp.com/)
+
 ## Tech used
 Typescript based ReactJS with NextJS framework. TailwindCSS and ChakraUI implemented for styling. 
 Basic Context API tried to implemented.
